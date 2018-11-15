@@ -1,0 +1,9 @@
+document.getElementById("foto1").src = "img2/aap1.jpg";
+document.getElementById("foto2").src = "img2/aap2.jpg";
+document.getElementById("foto3").src = "img2/aap3.jpg";
+document.getElementById("foto4").src = "img2/aap4.jpg";
+document.getElementById("foto5").src = "img2/aap5.jpg";
+document.getElementById("foto6").src = "img2/aap6.jpg";
+document.getElementById("foto7").src = "img2/aap7.jpg";
+document.getElementById("foto8").src = "img2/aap8.jpg";
+document.getElementById("foto9").src = "img2/aap9.jpg";

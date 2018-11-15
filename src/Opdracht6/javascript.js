@@ -1,9 +1,0 @@
-document.getElementById("foto1").src = "img/aap1.jpg";
-document.getElementById("foto2").src = "img/aap2.jpg";
-document.getElementById("foto3").src = "img/aap3.jpg";
-document.getElementById("foto4").src = "img/aap4.jpg";
-document.getElementById("foto5").src = "img/aap5.jpg";
-document.getElementById("foto6").src = "img/aap6.jpg";
-document.getElementById("foto7").src = "img/aap7.jpg";
-document.getElementById("foto8").src = "img/aap8.jpg";
-document.getElementById("foto9").src = "img/aap9.jpg";
