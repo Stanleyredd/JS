@@ -2,29 +2,71 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>monkey</title>
     <style>
-        h3 {
-            text-align: center;
+        html {
+            margin: 0 0 0 0;
+            padding: 0 0 0 0;
         }
+
+
+        body {
+            text-align: center;
+            font-family: 'Copse', Serif;
+        }
+
+        #pics {
+            width: 900px;
+            height: 900px;
+            border: solid 0px black;
+            font-size: 0px;
+            margin: auto;
+        }
+
         img {
-            text-align: center;
-            list-style-image: ;
+
+            width: 300px;
+            height: 300px;
+            border: 0px;
+
         }
+
     </style>
 </head>
 <body>
-<h3>MonkeyShuffle</h3>
-<img id="foto1"></img>
-<img id="foto2"></img>
-<img id="foto3"></img>
-<img id="foto4"></img>
-<img id="foto5"></img>
-<img id="foto6"></img>
-<img id="foto7"></img>
-<img id="foto8"></img>
-<img id="foto9"></img>
+<h1>MonkeyShuffle</h1>
+<div id="pics ">
+    <img id="foto1" src="img/aap1.jpg">
+    <img id="foto2" src="img/aap2.jpg">
+    <img id="foto3" src="img/aap3.jpg">
+    <img id="foto4" src="img/aap4.jpg">
+    <img id="foto5" src="img/aap5.jpg">
+    <img id="foto6" src="img/aap6.jpg">
+    <img id="foto7" src="img/aap7.jpg">
+    <img id="foto8" src="img/aap8.jpg">
+    <img id="foto9" src="img/aap9.jpg">
+</div>
 
-<script src="javascript6.js"></script>
+<script>
+    var plaatjes = document.getElementsByTagName("img");
+    var random = 0;
+
+    var randomNumbers = [];
+
+    while (randomNumbers.length < 9) {
+        random = Math.floor(Math.random()* 9) + 1;
+        if(randomNumbers.lastIndexOf(random) == -1) {
+            randomNumbers.push(random);
+        }
+    }
+
+    random = 0;
+    for (var plaatje in plaatjes) {
+        plaatjes[plaatje].src = "img/aap" + randomNumbers[random] + ".jpg";
+        random++;
+    }
+
+
+</script>
 </body>
 </html>
